@@ -1,5 +1,6 @@
 ---
-
+const pageTitle = "About Me";
+const updateDate = "2023-9-26";
 ---
 
 <html lang="en">
@@ -8,17 +9,26 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
   <a href="/">Home</a>
   <a href="/about/">About</a>
   <a href="/blog/">Blog</a>
-    <h1>About Me</h1>
+    <h1>{pageTitle}</h1>
+
+		<p>Last Updated: {updateDate}</p>
+
 		<h2>Alright I know what you're thinkin'</h2>
 		
     <p>"This dude is gonna make 3 posts about something extremely niche and disappear!"</p>
 
     <p>yea</p>
+
+		<p>But for the time being, my name is Cane Aubright. I'm not actually called that though, feel free to try looking it up you won't find anything.</p>
+
+		<p>Originally, I had no real plans to make a website. I actually wanted to make videos, but never found the motivation to actually do voiceovers and collect footage and all that. I ended up burning myself out with every attempt. Despite all that I still wanted to do more essay-like content.</p>
+
+		<p>And that leads me to making this website. Pretty barren, I know, but as time goes I'll update this site with more tricks I learn with Astro's tutorial and general experience.</p>
 	</body>
 </html>
