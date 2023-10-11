@@ -1,7 +1,10 @@
 ---
+import '../styles/global.css';
 const pageTitle = "About Me";
-const updateDate = "2023-9-26";
+const updateDate = "2023-10-11";
+const updateWeight = "bold";
 ---
+
 
 <html lang="en">
 	<head>
@@ -10,11 +13,14 @@ const updateDate = "2023-9-26";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
-		<style>
+		<style define:vars={{updateWeight}}>
       h1 {
         color: purple;
         font-size: 4rem;
       }
+			.updateDate {
+				font-weight: var(--updateWeight);
+			}
     </style>
 	</head>
 	<body>
@@ -23,7 +29,7 @@ const updateDate = "2023-9-26";
   <a href="/blog/">Blog</a>
     <h1>{pageTitle}</h1>
 
-		<p>Last Updated: {updateDate}</p>
+		<p class="updateDate">Last Updated: {updateDate}</p>
 
 		<h2>Alright I know what you're thinkin'</h2>
 		
