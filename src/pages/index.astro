@@ -1,6 +1,9 @@
 ---
 import '../styles/global.css';
 import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
+const pageTitle = 'Home Page';
 ---
 
 <html lang="en">
@@ -13,7 +16,8 @@ import Navigation from '../components/Navigation.astro';
 	</head>
 	<body>
 <Navigation />
-		<h1>Aubright</h1>
+		<h1>{pageTitle}</h1>
 		<h1>This is gonna be a lot of work for like 3 posts talking about o2jam and voices of the void</h1>
+		<Footer />
 	</body>
 </html>
